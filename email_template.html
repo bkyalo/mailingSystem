@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SNAP Mathematics Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background: url('https://snap.co.ke/wp-content/uploads/2025/02/Graphs-scaled.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 8px;
+        } */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent overlay */
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://snap.co.ke/wp-content/uploads/2025/02/Graphs-scaled.jpg') no-repeat center center;
+            background-size: cover;
+            opacity: 0.7; /* 30% opacity */
+            border-radius: 8px;
+            z-index: -1;
+        }
+
+        .content, .header, .footer {
+            position: relative;
+            z-index: 2;
+        }
+        .header {
+            text-align: center;
+            background-color: #00A4EE;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .content {
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-content: center;
+        }
+        .image-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            background-color: #873036;
+            color: white;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #008C4F;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">SNAP Mathematics</div>
+
+        <div class="content">
+            {{message}}
+            <p>Best regards,</p>
+            <p><strong>SNAP Mathematics Team</strong></p>
+
+            <div class="image-gallery">
+                <img src="https://snap.co.ke/wp-content/uploads/2024/04/F1.jpg" alt="Math Book 1">
+                <img src="https://snap.co.ke/wp-content/uploads/2024/04/F2.jpg" alt="Math Book 2">
+                <img src="https://snap.co.ke/wp-content/uploads/2024/04/F3.jpg" alt="Math Book 3">
+                <img src="https://snap.co.ke/wp-content/uploads/2024/04/F4.jpg" alt="Math Book 4">
+            </div>
+
+            <p>Explore our best-selling mathematics revision books designed for students to excel in exams.</p>
+            <a href="https://snap.co.ke/" class="cta-button">Visit Our Website</a>
+        </div>
+
+        <div class="footer">&copy; 2025 SNAP Mathematics | All rights reserved.</div>
+    </div>
+</body>
+</html>
