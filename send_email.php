@@ -18,15 +18,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['send'])) {
     try {
         // SMTP settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.your-email.com'; // Change to your SMTP server
+        $mail->Host       = 'smtp.gmail.com'; // Gmail SMTP server
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'your-email@example.com'; // Change to your email
-        $mail->Password   = 'your-email-password'; // Change to your email password
+        $mail->Username   = 'bentito@ouk.ac.ke'; // Your Gmail address
+        $mail->Password   = 'tntwhgxjwfwwufqh'; // Use App Password (not your actual password)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
+        $mail->setFrom('bentito@ouk.ac.ke', 'Ben Tito'); // Sender email and name
+        //$mail->addAddress($to); // Recipient email
+        //$mail->isHTML(true);
 
         // Sender & Recipient
-        $mail->setFrom('your-email@example.com', 'Your Name');
+        //$mail->setFrom('your-email@example.com', 'Your Name');
         $mail->addAddress($to);
 
         // Attachments (if any)
